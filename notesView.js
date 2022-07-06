@@ -24,6 +24,7 @@ class NotesView {
   addNewNote() {
     const inputEl = document.querySelector("#new-note");
     this.model.addNote(inputEl.value);
+    inputEl.value = "";
   }
 }
 
